@@ -1,0 +1,3 @@
+[submodule "lcnn"]
+	path = lcnn
+	url = git@github.com:fmidev/lagrangian-convolutional-neural-network.git
