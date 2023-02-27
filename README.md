@@ -38,6 +38,13 @@ For more description of the parameters, see the [L-CNN repository](https://githu
 
 ## Creating the nowcasts
 
+First create the input dataset with
+
+```bash
+cd lcnn
+python create_data.py <timestamp-YYYYmmddHHMM< lcnn-predict-realtime
+```
+
 The nowcasts can be created with the script `lcnn/create_nowcast.sh`:
 
 ```bash

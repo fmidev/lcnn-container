@@ -36,4 +36,5 @@ WORKDIR /lcnn
 ENV CONFIG lcnn-predict-realtime
 ENV TIMESTAMP 201908230500
 
-ENTRYPOINT conda run -n lcnn python create_nowcast.py $TIMESTAMP $CONFIG
+ENTRYPOINT conda run -n lcnn python create_data.py $TIMESTAMP $CONFIG \
+    && conda run -n lcnn python create_nowcast.py $TIMESTAMP $CONFIG
