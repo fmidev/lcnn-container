@@ -29,12 +29,11 @@ mkdir -p "$LOGPATH"
 # Run with volume mounts
 docker run \
     --rm \
-    --env "timestamp=$TIMESTAMP" \
-    --env "config=$CONFIG" \
+    --env "TIMESTAMP=$TIMESTAMP" \
+    --env "CONFIG=$CONFIG" \
     -v "${INPATH}":/input \
     -v "${OUTPATH}":/output \
     -v "${LOGPATH}":/log \
     -v "${MODELPATH}":/checkpoints \
     -v "$(pwd)"/lcnn:/lcnn \
     lcnnrealtime:latest
-# -v "$(pwd)"/create_nowcast.py:/create_nowcast.py \

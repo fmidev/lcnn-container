@@ -52,3 +52,7 @@ bash run_container_nowcast.sh
 ```
 
 The configuration for this script can be overwritten by setting the environment variables `TIMESTAMP`, `CONFIG` for the nowcast parameters and `INPATH`, `OUTPATH`, `LOGPATH`, `MODELPATH` for the input, output, log and model directories mounted inside the container, respectively.
+
+## Nowcast workflow
+
+![Nowcast workflow](lcnn-realtime-workflow.png)
